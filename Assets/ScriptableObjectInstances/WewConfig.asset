@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b96c34381853e4db8f7bafbe742019, type: 3}
   m_Name: WewConfig
   m_EditorClassIdentifier: 
-  resourceName: 
-  _consumptionDuration: 0
-  _cooldownPeriod: 0
-  _resourceByproducts: []
+  resourceName: Wew
+  _consumptionDuration: 3
+  _cooldownPeriod: 5
+  _resourceByproducts:
+  - {fileID: 11400000, guid: 26e12acfb7b69154ab0f4e8b5fbf01a3, type: 2}
   _resourceModelIcon: {fileID: 0}
-  _resourceTraits: []
+  _resourceTraits:
+  - {fileID: 11400000, guid: cc112be224499434fa561ae3ea8a69d1, type: 2}
