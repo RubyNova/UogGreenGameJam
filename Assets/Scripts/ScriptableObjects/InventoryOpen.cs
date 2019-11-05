@@ -6,30 +6,34 @@ using UnityEngine.EventSystems;
 
 public class InventoryOpen : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject invpanel;
+    public GameObject showpanel, hidepanel;
+    public Button theButton;
 
-    private void OpenPanel()
+    public void OpenPanel()
     {
-        Animator animator = panel.GetComponent<Animator>();
-        if (panel != null) {
-            bool isOpen = animator.GetBool("open");
-            animator.SetBool("open", !isOpen);
+        if (invpanel.activeSelf)
+        {
+            invpanel.SetActive(false);
+            showpanel.SetActive(true);
+            hidepanel.SetActive(false);
+            
         }
-        
-        
-}
+        else
+        {
+            invpanel.SetActive(true);
+            hidepanel.SetActive(true);
+            showpanel.SetActive(false);
+        }
 
-    void GetPooled()
-    {
-        Debug.Log("Mouse is over GameObject.");
-        OpenPanel();
+
+
     }
     
 
 // Start is called before the first frame update
 void Start()
 {
-    
 }
 
 // Update is called once per frame
