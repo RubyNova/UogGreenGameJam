@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0562b15899f444b0a08967d05703d641, type: 3}
   m_Name: AaaaTrait
   m_EditorClassIdentifier: 
-  _statusModifier: 0
-  _modificationAmount: 0
+  _statusModifier: 2
+  _modificationAmount: 10

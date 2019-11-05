@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b96c34381853e4db8f7bafbe742019, type: 3}
   m_Name: FooConfig
   m_EditorClassIdentifier: 
-  resourceName: 
-  _consumptionDuration: 0
-  _cooldownPeriod: 0
+  resourceName: Foo
+  _consumptionDuration: 1
+  _cooldownPeriod: 1
   _resourceByproducts: []
   _resourceModelIcon: {fileID: 0}
-  _resourceTraits: []
+  _resourceTraits:
+  - {fileID: 11400000, guid: cc112be224499434fa561ae3ea8a69d1, type: 2}
