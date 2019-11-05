@@ -13,7 +13,7 @@ public class ResourceController : MonoBehaviour
     [SerializeField]
     private GameObject _resourceOptionPrefab;
 
-    private List<ResourceOption> _recycleQueue = new List<ResourceOption>();
+    private readonly Queue<ResourceOption> _recycleQueue = new Queue<ResourceOption>();
     private ResourceOption _currentResource;
 
     private void Start()
@@ -35,14 +35,14 @@ public class ResourceController : MonoBehaviour
             return;
         }
         
-        _recycleQueue.Add(e);
+        _recycleQueue.Enqueue(e);
         e.ResourceFinishedRecycling += OnResourceFinishedRecycling;
     }
 
     private void OnResourceFinishedRecycling(object sender, ResourceOption e)
     {
         ProcessStatModifiersAndByproducts(e.Config);
-        _recycleQueue.Remove(e);
+        _recycleQueue.Dequeue();
         e.ResourceFinishedRecycling -= OnResourceFinishedRecycling;
         _currentResource = null;
     }
@@ -53,7 +53,7 @@ public class ResourceController : MonoBehaviour
     {
         if (_currentResource != null) return;
 
-        _currentResource = _recycleQueue.FirstOrDefault();
+        _currentResource = _recycleQueue.Peek();
         
         if (_currentResource == null) return;
         
