@@ -1,4 +1,4 @@
 public enum StatusModifier
 {
-    Rubbish, Points, Energy
+    Rubbish, Points, Energy, RareItem
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 public class ResourceTypeConfig : ScriptableObject
 {
     [SerializeField]
-    private string _name;
+    private string resourceName;
 
     [SerializeField]
     private float _consumptionDuration;
@@ -24,7 +24,7 @@ public class ResourceTypeConfig : ScriptableObject
     [SerializeField]
     private List<ResourceTraitConfig> _resourceTraits;
 
-    public string Name => _name;
+    public string ResourceName => resourceName;
 
     public float ConsumptionDuration => _consumptionDuration;
 
