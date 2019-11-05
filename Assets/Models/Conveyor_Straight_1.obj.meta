@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Conveyor1_group1_polySurface12Mat
-    second: {fileID: 2100000, guid: e574e06b16c987747994f1a91e3efe81, type: 2}
+    second: {fileID: 2100000, guid: 6158bcc5fe92e724bbf63287bfea611b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

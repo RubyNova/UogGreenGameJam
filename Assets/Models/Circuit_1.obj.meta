@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CircuitMat
-    second: {fileID: 2100000, guid: 7b7e2d8be1715c54cbaa44d2dabc979c, type: 2}
+    second: {fileID: 2100000, guid: 1e6393e53857739458043eed4ad96634, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
