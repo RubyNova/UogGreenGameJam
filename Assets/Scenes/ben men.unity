@@ -2650,7 +2650,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10390,6 +10390,16 @@ MonoBehaviour:
   invText8: {fileID: 3388870493936803450}
   invText9: {fileID: 3388870494190697697}
   invText10: {fileID: 3388870493914866287}
+  invBattery: 0
+  invCopperW: 0
+  invCircuitB: 0
+  invGlass: 0
+  invMicroP: 0
+  invPlasticS: 0
+  invScrews: 0
+  invSpool: 0
+  invNum9: 0
+  invNum10: 0
 --- !u!224 &3388870494290817818
 RectTransform:
   m_ObjectHideFlags: 0
