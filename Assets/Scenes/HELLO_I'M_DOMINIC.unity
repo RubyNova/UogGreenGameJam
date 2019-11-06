@@ -2209,6 +2209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207aab4fd7440249a4c60e25d6ac760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryScript: {fileID: 0}
+  workingSound: {fileID: 0}
   _resourceConfigs:
   - {fileID: 11400000, guid: d9b23ab42c894354ebb51814181ed3b2, type: 2}
   - {fileID: 11400000, guid: 6bcdd9a071506a040bf23a99ba247a00, type: 2}
@@ -2657,7 +2659,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3367,11 +3369,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crafter_2_animated
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: b0a54db84c4858a4c914026547c04fce,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e3ff1e33a9fc0034297db2ae38f2ceed, type: 2}
     - target: {fileID: -4216859302048453862, guid: b0a54db84c4858a4c914026547c04fce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3427,6 +3424,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: b0a54db84c4858a4c914026547c04fce,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e3ff1e33a9fc0034297db2ae38f2ceed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0a54db84c4858a4c914026547c04fce, type: 3}
 --- !u!1001 &801048865
@@ -4639,6 +4641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207aab4fd7440249a4c60e25d6ac760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryScript: {fileID: 0}
+  workingSound: {fileID: 0}
   _resourceConfigs: []
   _verticalViewObject: {fileID: 0}
   _resourceOptionPrefab: {fileID: 6156389922774197023, guid: 445a3760d4d75bf45b067ca72daf573d,
@@ -9989,6 +9993,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6647d6d5dbc264aa0fd0772993a91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv1: {fileID: 0}
+  inv2: {fileID: 0}
+  inv3: {fileID: 0}
+  inv4: {fileID: 0}
+  inv5: {fileID: 0}
+  inv6: {fileID: 0}
+  inv7: {fileID: 0}
   invText1: {fileID: 3388870493168032117}
   invText2: {fileID: 3388870492509980232}
   invText3: {fileID: 3388870492435389061}
@@ -9996,9 +10007,6 @@ MonoBehaviour:
   invText5: {fileID: 3388870493111755780}
   invText6: {fileID: 3388870494015835606}
   invText7: {fileID: 3388870493936803450}
-  invText8: {fileID: 0}
-  invText9: {fileID: 0}
-  invText10: {fileID: 0}
   invBattery: 0
   invCopperW: 0
   invCircuitB: 0
@@ -10009,6 +10017,15 @@ MonoBehaviour:
   invSpool: 0
   invNum9: 0
   invNum10: 0
+  invBatteryUpdate: 0
+  invCopperWUpdate: 0
+  invCircuitBUpdate: 0
+  invMicroPUpdate: 0
+  invPlasticSUpdate: 0
+  invScrewsUpdate: 0
+  invSpoolUpdate: 0
+  invNum9Update: 0
+  invNum10Update: 0
 --- !u!224 &3388870494290817818
 RectTransform:
   m_ObjectHideFlags: 0
