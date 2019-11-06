@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b96c34381853e4db8f7bafbe742019, type: 3}
   m_Name: CopperConfig
   m_EditorClassIdentifier: 
-  resourceName: Copper
+  resourceName: Copper Wire
   _consumptionDuration: 3
   _cooldownPeriod: 5
   _resourceByproducts:

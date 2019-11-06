@@ -47,8 +47,17 @@ public class ResourceController : MonoBehaviour
         _currentResource = null;
     }
 
-    private void ProcessStatModifiersAndByproducts(ResourceTypeConfig config) => Debug.Log($"Player would receive {string.Join(", ", config.ResourceByproducts.Any() ? config.ResourceByproducts.Select(x => x.ResourceName) : new List<string>(){"None"})} resources and {string.Join(", ", config.ResourceTraits.Any() ? config.ResourceTraits.Select(x => x.StatusModifier.ToString() + " - " + x.ModificationAmount) : new List<string>() {"None"})} traits.");
+    private void ProcessStatModifiersAndByproducts(ResourceTypeConfig config)
+    {
+        Debug.Log($"Player would receive {string.Join(", ", config.ResourceByproducts.Any() ? config.ResourceByproducts.Select(x => x.ResourceName) : new List<string>(){"None"})} resources and {string.Join(", ", config.ResourceTraits.Any() ? config.ResourceTraits.Select(x => x.StatusModifier.ToString() + " - " + x.ModificationAmount) : new List<string>() {"None"})} traits.");
+        
+        if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invCopperWName))
+        {
+            Debug.Log("Hello");
+            Inventory.UpdateCopperWs(1);
+        }
 
+    } 
     private void Update()
     {
         if (_currentResource != null || _recycleQueue.Count == 0) return;

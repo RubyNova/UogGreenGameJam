@@ -1126,7 +1126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -209.09998, y: 108.70001}
+  m_AnchoredPosition: {x: -209.09998, y: 108.70003}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &290290807
@@ -2573,8 +2573,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.49999994
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8592,7 +8592,7 @@ GameObject:
   - component: {fileID: 3388870492509980232}
   m_Layer: 5
   m_Name: invtext2
-  m_TagString: Untagged
+  m_TagString: copper wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9897,6 +9897,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6647d6d5dbc264aa0fd0772993a91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv1: {fileID: 3388870493168032119}
+  inv2: {fileID: 3388870492509980234}
+  inv3: {fileID: 3388870492435389063}
+  inv4: {fileID: 3388870494138286789}
+  inv5: {fileID: 3388870493111755782}
+  inv6: {fileID: 3388870494015835608}
+  inv7: {fileID: 3388870493936803452}
+  inv8: {fileID: 0}
+  inv9: {fileID: 0}
+  inv10: {fileID: 0}
   invText1: {fileID: 3388870493168032117}
   invText2: {fileID: 3388870492509980232}
   invText3: {fileID: 3388870492435389061}
@@ -9917,6 +9927,15 @@ MonoBehaviour:
   invSpool: 0
   invNum9: 0
   invNum10: 0
+  invBatteryUpdate: 0
+  invCopperWUpdate: 0
+  invCircuitBUpdate: 0
+  invMicroPUpdate: 0
+  invPlasticSUpdate: 0
+  invScrewsUpdate: 0
+  invSpoolUpdate: 0
+  invNum9Update: 0
+  invNum10Update: 0
 --- !u!224 &3388870494290817818
 RectTransform:
   m_ObjectHideFlags: 0
