@@ -2125,6 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207aab4fd7440249a4c60e25d6ac760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryScript: {fileID: 3388870494290817819}
   _resourceConfigs:
   - {fileID: 11400000, guid: d9b23ab42c894354ebb51814181ed3b2, type: 2}
   - {fileID: 11400000, guid: 6bcdd9a071506a040bf23a99ba247a00, type: 2}
@@ -2573,7 +2574,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4525,6 +4526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207aab4fd7440249a4c60e25d6ac760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryScript: {fileID: 0}
   _resourceConfigs: []
   _verticalViewObject: {fileID: 0}
   _resourceOptionPrefab: {fileID: 6156389922774197023, guid: 445a3760d4d75bf45b067ca72daf573d,
@@ -9904,9 +9906,6 @@ MonoBehaviour:
   inv5: {fileID: 3388870493111755782}
   inv6: {fileID: 3388870494015835608}
   inv7: {fileID: 3388870493936803452}
-  inv8: {fileID: 0}
-  inv9: {fileID: 0}
-  inv10: {fileID: 0}
   invText1: {fileID: 3388870493168032117}
   invText2: {fileID: 3388870492509980232}
   invText3: {fileID: 3388870492435389061}
@@ -9914,9 +9913,6 @@ MonoBehaviour:
   invText5: {fileID: 3388870493111755780}
   invText6: {fileID: 3388870494015835606}
   invText7: {fileID: 3388870493936803450}
-  invText8: {fileID: 0}
-  invText9: {fileID: 0}
-  invText10: {fileID: 0}
   invBattery: 0
   invCopperW: 0
   invCircuitB: 0

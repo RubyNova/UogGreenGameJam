@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8b96c34381853e4db8f7bafbe742019, type: 3}
-  m_Name: PlasticConfig
+  m_Name: MicroPlasticConfig
   m_EditorClassIdentifier: 
-  resourceName: Plastic
+  resourceName: Micro-plastic
   _consumptionDuration: 3
   _cooldownPeriod: 5
   _resourceByproducts:

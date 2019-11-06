@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ResourceController : MonoBehaviour
 {
+    [SerializeField] private GameObject inventoryScript;
     [SerializeField]
     private List<ResourceTypeConfig> _resourceConfigs;
 
@@ -49,14 +50,38 @@ public class ResourceController : MonoBehaviour
 
     private void ProcessStatModifiersAndByproducts(ResourceTypeConfig config)
     {
+        
         Debug.Log($"Player would receive {string.Join(", ", config.ResourceByproducts.Any() ? config.ResourceByproducts.Select(x => x.ResourceName) : new List<string>(){"None"})} resources and {string.Join(", ", config.ResourceTraits.Any() ? config.ResourceTraits.Select(x => x.StatusModifier.ToString() + " - " + x.ModificationAmount) : new List<string>() {"None"})} traits.");
         
         if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invCopperWName))
         {
-            Debug.Log("Hello");
-            Inventory.UpdateCopperWs(1);
-        }
+            inventoryScript.GetComponent<Inventory>().UpdateCopperW(1);
 
+        }
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invBatteryName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdateBattery(1);
+        }       
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invSpoolName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdateSpool(1);
+        }
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invScrewsName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdateScrews(1);;
+        }
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invMicroPName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdateMicroPlastic(1);
+        }
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invPlasticSName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdatePlasticS(1);
+        }
+        else if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invCircuitBName))
+        {
+            inventoryScript.GetComponent<Inventory>().UpdateCircuitB(1);
+        }
     } 
     private void Update()
     {
