@@ -1126,7 +1126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -209.09998, y: 108.70001}
+  m_AnchoredPosition: {x: -209.09998, y: 108.70003}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &290290807
@@ -2834,7 +2834,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4787,7 +4787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryScript: {fileID: 0}
-  workingSound: {fileID: 0}
+  workingSound: {fileID: 408783777}
   _resourceConfigs: []
   _verticalViewObject: {fileID: 0}
   _resourceOptionPrefab: {fileID: 6156389922774197023, guid: 445a3760d4d75bf45b067ca72daf573d,
@@ -6666,7 +6666,7 @@ GameObject:
   - component: {fileID: 1555427951}
   m_Layer: 0
   m_Name: generator sound
-  m_TagString: Untagged
+  m_TagString: workingsound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -30,13 +30,13 @@ public class ResourceController : MonoBehaviour
 
     private void OnRecycleRequest(object sender, ResourceOption e)
     {
-        workingSound.SetActive(true);
         if (_recycleQueue.Contains(e))
         {
             Debug.LogError($"Somehow, a duplicate recycle request was made! Config: {e.Config.ResourceName}");
             return;
         }
-        
+
+        workingSound.SetActive(true);
         _recycleQueue.Enqueue(e);
         e.ResourceFinishedRecycling += OnResourceFinishedRecycling;
     }
@@ -47,13 +47,14 @@ public class ResourceController : MonoBehaviour
         _recycleQueue.Dequeue();
         e.ResourceFinishedRecycling -= OnResourceFinishedRecycling;
         _currentResource = null;
-        workingSound.SetActive(false);
+        
+
         
     }
 
     private void ProcessStatModifiersAndByproducts(ResourceTypeConfig config)
     {
-        
+        workingSound.SetActive(false);
         Debug.Log($"Player would receive {string.Join(", ", config.ResourceByproducts.Any() ? config.ResourceByproducts.Select(x => x.ResourceName) : new List<string>(){"None"})} resources and {string.Join(", ", config.ResourceTraits.Any() ? config.ResourceTraits.Select(x => x.StatusModifier.ToString() + " - " + x.ModificationAmount) : new List<string>() {"None"})} traits.");
         
         if (config.ResourceByproducts.FirstOrDefault(x => x.ResourceName == Inventory.invCopperWName))
@@ -85,6 +86,7 @@ public class ResourceController : MonoBehaviour
         {
             inventoryScript.GetComponent<Inventory>().UpdateCircuitB(1);
         }
+        
     } 
     private void Update()
     {
@@ -95,5 +97,10 @@ public class ResourceController : MonoBehaviour
         if (_currentResource == null) return;
         
         _currentResource.BeginProgress();
+        
+        if (_recycleQueue.Count == 0)
+        {
+            workingSound.SetActive(false);
+        }
     }
 }
