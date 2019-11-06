@@ -51,7 +51,7 @@ public class ResourceController : MonoBehaviour
 
     private void Update()
     {
-        if (_currentResource != null) return;
+        if (_currentResource != null || _recycleQueue.Count == 0) return;
 
         _currentResource = _recycleQueue.Peek();
         
