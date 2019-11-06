@@ -17,6 +17,7 @@ MonoBehaviour:
   _cooldownPeriod: 2
   _resourceByproducts:
   - {fileID: 11400000, guid: 89a975e090f2bee499b7fd23195c24fb, type: 2}
-  _resourceModelIcon: {fileID: 0}
+  _resourceModelIcon: {fileID: 5284738474467596920, guid: f62ec87f2a57fd74dac780f832fb7a41,
+    type: 3}
   _resourceTraits:
   - {fileID: 11400000, guid: cc112be224499434fa561ae3ea8a69d1, type: 2}
