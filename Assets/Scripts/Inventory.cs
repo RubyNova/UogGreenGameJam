@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
-{
-    [SerializeField] private GameObject invIcon1, invIcon2, invIcon3, invIcon4, invIcon5, invIcon6, invIcon7, invIcon8, invIcon9, invIcon10;
+{ 
     [SerializeField] private Text invText1, invText2, invText3, invText4, invText5, invText6, invText7,invText8, invText9, invText10;
     public int invBattery, invCopperW, invCircuitB, invGlass , invMicroP , invPlasticS , invScrews , invSpool, invNum9, invNum10;
     // Start is called before the first frame update
