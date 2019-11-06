@@ -25,7 +25,7 @@ public class ResourceOption : MonoBehaviour
 
     [SerializeField] 
     private Transform _iconPosition;
-    
+
     public ResourceTypeConfig Config { get; private set; }
 
     public void Init(ResourceTypeConfig config)
@@ -45,7 +45,7 @@ public class ResourceOption : MonoBehaviour
 
     public void RecycleResource()
     {
-        _recycleButton.SetActive(false);
+        _recycleButton.GetComponent<Button>().interactable = false;
         ResourceRequestsRecycling?.Invoke(this, this);
     }
 
@@ -75,6 +75,7 @@ public class ResourceOption : MonoBehaviour
             yield return null;
         }
         
-        _recycleButton.SetActive(true);
+        _recycleButton.GetComponent<Button>().interactable = true;
+        _recycleButton.GetComponent<Button>().OnDeselect(null);
     }
 }
