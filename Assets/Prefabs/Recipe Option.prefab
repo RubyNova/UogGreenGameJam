@@ -780,9 +780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: {fileID: 9081238426833134854}
-  _icon: {fileID: 0}
-  _recipeIconOne: {fileID: 0}
-  _recipeIconTwo: {fileID: 0}
+  _icon: {fileID: 7230063692318742857}
+  _recipeIconOne: {fileID: 8502386226138011964}
+  _recipeIconTwo: {fileID: 3096483283811703304}
   _resourceNameOne: {fileID: 1748356200471534588}
   _resourceNameTwo: {fileID: 8529802883666069901}
 --- !u!1 &8234010756788918235

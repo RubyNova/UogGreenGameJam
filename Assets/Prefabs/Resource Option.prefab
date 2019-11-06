@@ -615,6 +615,7 @@ MonoBehaviour:
   _resourceByproducts: {fileID: 6156389923335989113}
   _progressBar: {fileID: 6156389921812503476}
   _recycleButton: {fileID: 6156389923102064140}
+  _iconPosition: {fileID: 6156389922171896714}
 --- !u!1 &6156389923102064140
 GameObject:
   m_ObjectHideFlags: 0

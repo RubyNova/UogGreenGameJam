@@ -22,14 +22,25 @@ public class ResourceOption : MonoBehaviour
 
     [SerializeField]
     private GameObject _recycleButton;
+
+    [SerializeField] 
+    private Transform _iconPosition;
     
     public ResourceTypeConfig Config { get; private set; }
 
     public void Init(ResourceTypeConfig config)
     {
+        var thisRect = (RectTransform)_iconPosition;
         Config = config;
         _name.text = config.ResourceName;
         _resourceByproducts.text = "Byproducts: " + string.Join(", ", config.ResourceByproducts.Any() ? config.ResourceByproducts.Select(x => x.ResourceName) : new List<string>() {"None"});
+        var rect = Instantiate(config.ResourceModelIcon, _iconPosition).GetComponentInChildren<RectTransform>();
+        rect.parent = transform;
+        rect.anchoredPosition = thisRect.anchoredPosition;
+        rect.anchorMin = thisRect.anchorMin;
+        rect.anchorMax = thisRect.anchorMax;
+        rect.offsetMax = thisRect.offsetMax;
+        rect.offsetMin = thisRect.offsetMin;
     }
 
     public void RecycleResource()

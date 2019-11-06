@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ResourceController : MonoBehaviour
 {
-    [SerializeField] private GameObject inventoryScript, workingSound;
+    [SerializeField] 
+    private GameObject inventoryScript;
+    
+    [SerializeField]
+    private GameObject workingSound;
+    
     [SerializeField]
     private List<ResourceTypeConfig> _resourceConfigs;
 
@@ -47,9 +52,6 @@ public class ResourceController : MonoBehaviour
         _recycleQueue.Dequeue();
         e.ResourceFinishedRecycling -= OnResourceFinishedRecycling;
         _currentResource = null;
-        
-
-        
     }
 
     private void ProcessStatModifiersAndByproducts(ResourceTypeConfig config)
