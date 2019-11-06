@@ -1126,7 +1126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -209.09998, y: 108.70003}
+  m_AnchoredPosition: {x: -209.09998, y: 108.70001}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &290290807
@@ -2834,7 +2834,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1709022067}
   m_HandleRect: {fileID: 1709022066}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5339,7 +5339,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d9fecbf5a192fc3498aef1de3a356ed2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dd7f822d4a59304fab58f7df3170d3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6943,7 +6943,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d9fecbf5a192fc3498aef1de3a356ed2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74ee07f70978ae048b91a234266c8798, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8336,7 +8336,7 @@ GameObject:
   - component: {fileID: 2015814836}
   - component: {fileID: 2015814835}
   m_Layer: 5
-  m_Name: screws
+  m_Name: spools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8381,7 +8381,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b0a3bfd06ec4d1c409cb3c6ddf988a91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c69051ccc5b3f2940a5bdb728e9f1d53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
